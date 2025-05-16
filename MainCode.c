@@ -18,12 +18,12 @@ void sort(struct Student a[], int n);
 void display(struct Student a[], int n);
 
 
-struct Student yasaswini = {2300030244, "Yasaswini", "female", 1, 5, 99, 100};
-struct Student sai_sree = {2300030570, "Sai Sree", "female", 0, 4, 10, 99};
-struct Student ram = {2300030211, "Ram", "male", 1, 2, 44, 48};
-struct Student seetha = {2300030292, "Seetha", "female", 0, 3, 57, 29};
-struct Student ganesh = {2300030191, "Ganesh", "male", 1, 5, 80, 33};
-struct Student parvathi = {2300010255, "Parvathi", "female", 1, 4, 40, 97};
+struct Student sruthika = {2300030224, "Sruthika", "female", 1, 5, 99, 100};
+struct Student saniya_firoj = {2300030628, "Saniya Firoj", "female", 0, 4, 10, 99};
+struct Student kavya = {2300032108, "Kavya", "female", 1, 2, 44, 48};
+struct Student navdeeep = {2300030055, "Navdeep", "male", 0, 3, 57, 29};
+struct Student sirish = {2300030029, "Sirish", "male", 1, 5, 80, 33};
+struct Student sudharshini = {2300030065, "Sudharshini", "female", 1, 4, 40, 97};
 struct Student karthikeya = {2300090115, "Karthikeya", "male", 1, 1, 100, 79};
 
 int main() {
@@ -33,12 +33,12 @@ int main() {
     scanf("%d", &f);
     n=7+f;
     struct Student a[n];
-    a[0] = yasaswini;
-    a[1] = sai_sree;
-    a[2] = ram;
-    a[3] = seetha;
-    a[4] = ganesh;
-    a[5] = parvathi;
+    a[0] = sruthika;
+    a[1] = saniya_firoj;
+    a[2] = kavya;
+    a[3] = navdeep;
+    a[4] = sirish;
+    a[5] = sudharshini;
     a[6] = karthikeya;
 
     int i;
@@ -53,7 +53,7 @@ int main() {
         scanf(" %s", a[i].gender);
         printf("Document submission status (enter 1 if submitted, 0 if not submitted): ");
         scanf("%d", &a[i].document);
-        printf("Enter specialization (1 for AI DS, 2 for CSE, 3 for EEE, 4 for BIOTECHNOLOGY, 5 for CS/IT): ");
+        printf("Enter specialization (1 for CSE, 2 for AI&DS, 3 for EEE, 4 for CSE-H, 5 for CS/IT): ");
         scanf("%d", &a[i].specialization);
         printf("Enter academic marks percentage out of 100%%: ");
         scanf("%d", &a[i].academic_marks);
@@ -144,16 +144,16 @@ void sort(struct Student a[], int n) {
         printf("Specialization: ");
         switch (a[i].specialization) {
             case 1:
-                printf("AI DS\n");
+                printf("CSE\n");
                 break;
             case 2:
-                printf("CSE\n");
+                printf("AI&DS\n");
                 break;
             case 3:
                 printf("EEE\n");
                 break;
             case 4:
-                printf("BIOTECHNOLOGY\n");
+                printf("CSE-H\n");
                 break;
             case 5:
                 printf("CS/IT\n");
@@ -203,16 +203,16 @@ void display(struct Student a[], int n) {
         printf("Specialization: ");
         switch (a[i].specialization) {
             case 1:
-                printf("AI DS\n");
+                printf("CSE\n");
                 break;
             case 2:
-                printf("CSE\n");
+                printf("AI&DS\n");
                 break;
             case 3:
                 printf("EEE\n");
                 break;
             case 4:
-                printf("BIOTECHNOLOGY\n");
+                printf("CSE-H\n");
                 break;
             case 5:
                 printf("CS/IT\n");
